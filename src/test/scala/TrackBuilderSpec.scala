@@ -27,7 +27,7 @@ class TrackBuilderSpec extends FlatSpec with Matchers {
       Talk("Rails for Python Developers lightning", 5)
     )
 
-    val tracks = TrackBuilder.build(talkDetails)
+    val tracks = TrackBuilder.build(talkDetails).get
 
     tracks.size shouldBe 2
 
@@ -62,6 +62,6 @@ class TrackBuilderSpec extends FlatSpec with Matchers {
   "TrackBuilder" should "return empty list given empty list of talkDetails" in {
     val tracks = TrackBuilder.build(List.empty)
 
-    tracks shouldBe empty
+    tracks shouldBe None
   }
 }
