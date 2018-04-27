@@ -6,6 +6,8 @@ object ConferenceTrackManager {
 
     val fileName = scala.io.StdIn.readLine("Enter the input file path : ")
 
-    InputFileParser.parse(fileName)
+    val talkDetailsList = InputFileParser.parse(fileName)
+
+    val tracks = TrackBuilder.build(talkDetailsList)
   }
 }

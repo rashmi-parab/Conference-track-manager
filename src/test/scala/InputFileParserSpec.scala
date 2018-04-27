@@ -8,10 +8,19 @@ class InputFileParserSpec extends FlatSpec with Matchers {
     val talkDetails = InputFileParser.parse("/Users/mangeshphuge/ConferenceTrackManagerScalaRP/src/test/testData/ValidConferenceTalkDetails")
 
     talkDetails.length shouldBe 19
-    talkDetails.head._1 shouldBe "Writing Fast Tests Against Enterprise Rails 60min"
-    talkDetails.head._2 shouldBe 60
-    talkDetails(5)._1 shouldBe "Rails for Python Developers lightning"
-    talkDetails(5)._2 shouldBe 5
+    talkDetails.head.title shouldBe "Writing Fast Tests Against Enterprise Rails 60min"
+    talkDetails.head.duration shouldBe 60
+
+    talkDetails.last.title shouldBe "Rails for Python Developers lightning"
+    talkDetails.last.duration shouldBe 5
+  }
+
+  "InputParser" should "parse successfully if no lighting talks" in {
+    val talkDetails = InputFileParser.parse("/Users/mangeshphuge/ConferenceTrackManagerScalaRP/src/test/testData/NoLightingTalkDetails")
+
+    talkDetails.length shouldBe 5
+    talkDetails.head.title shouldBe "Writing Fast Tests Against Enterprise Rails 60min"
+    talkDetails.head.duration shouldBe 60
   }
 
   "InputParser" should "throw exception when Input file contents are empty" in {

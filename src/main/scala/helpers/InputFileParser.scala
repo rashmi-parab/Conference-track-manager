@@ -1,23 +1,29 @@
 package helpers
 
+import models.Talk
 import scala.io.Source
 
 object InputFileParser {
 
-  def parse(filePath: String): List[(String, Int)] = {
+  def parse(filePath: String): List[Talk] = {
     val bufferedSource = Source.fromFile(filePath)
 
     try {
-      if (bufferedSource.isEmpty)
-        throw new Exception("File is empty")
-      else {
-        bufferedSource.getLines.toList.map { talkTitle =>
-          val talkDuration = talkTitle.split(" ").last match {
-            case "lightning" => 5
-            case duration => duration.substring(0, 2).toInt
+      if (bufferedSource.nonEmpty) {
+        val allTalks = bufferedSource.getLines.toList.map { talkTitle =>
+          talkTitle.split(" ").last match {
+            case "lightning" => Talk(talkTitle, 5)
+            case duration => Talk(talkTitle, duration.substring(0, 2).toInt)
           }
-          (talkTitle, talkDuration)
         }
+
+        val lightningTalks = allTalks.filter(talk => talk.duration == 5)
+        val otherTalks = allTalks diff lightningTalks
+
+        otherTalks ++ lightningTalks
+      }
+      else {
+        throw new Exception("File is empty")
       }
     }
     catch {
