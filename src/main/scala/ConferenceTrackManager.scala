@@ -8,6 +8,6 @@ object ConferenceTrackManager {
 
     val talkDetailsList = InputFileParser.parse(fileName)
 
-    val tracks = TrackBuilder.build(talkDetailsList)
+    TrackBuilder.build(talkDetailsList)
   }
 }

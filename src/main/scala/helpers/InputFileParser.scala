@@ -1,6 +1,8 @@
 package helpers
 
+import configs.TrackManagerConfig
 import models.Talk
+
 import scala.io.Source
 
 object InputFileParser {
@@ -12,7 +14,7 @@ object InputFileParser {
       if (bufferedSource.nonEmpty) {
         val allTalks = bufferedSource.getLines.toList.map { talkTitle =>
           talkTitle.split(" ").last match {
-            case "lightning" => Talk(talkTitle, 5)
+            case "lightning" => Talk(talkTitle, TrackManagerConfig.LightningTalkDuration)
             case duration => Talk(talkTitle, duration.substring(0, 2).toInt)
           }
         }

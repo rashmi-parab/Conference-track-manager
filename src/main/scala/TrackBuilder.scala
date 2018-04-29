@@ -1,3 +1,5 @@
+import java.time.LocalTime
+
 import configs.TrackManagerConfig
 import models.{Talk, Track}
 
@@ -11,22 +13,25 @@ object TrackBuilder {
     val eveningSessions: List[ListBuffer[Talk]] = List.fill(noOfTracks)(ListBuffer.empty)
 
     if (talkDetailsList.nonEmpty) {
-      for (i <- talkDetailsList.indices) {
-        if (!findSlotIn(morningSessions, TrackManagerConfig.maxMinutesMorning, talkDetailsList(i)))
-          findSlotIn(eveningSessions, TrackManagerConfig.maxMinutesEvening.max, talkDetailsList(i))
+      for (talk <- talkDetailsList) {
+        if (!findAndInsertSlotIn(morningSessions, TrackManagerConfig.maxMinutesMorning, TrackManagerConfig.morningSessionStartTime, talk))
+          findAndInsertSlotIn(eveningSessions, TrackManagerConfig.maxMinutesEvening.end, TrackManagerConfig.eveningSessionStartTime, talk)
       }
-
-      Some((morningSessions zip eveningSessions).map { track => Track(track._1.toList, track._2.toList)})
+      Some((morningSessions zip eveningSessions).map { track => Track(track._1.toList, track._2.toList) })
     }
     else
       None
   }
 
-  private def findSlotIn(sessions: List[ListBuffer[Talk]], maxSessionTime: Int, talk: Talk): Boolean = {
+  private def findAndInsertSlotIn(sessions: List[ListBuffer[Talk]], maxSessionTime: Int, sessionStartTime: LocalTime, talk: Talk): Boolean = {
     var slotFound = false
-    for (t <- sessions.indices if !slotFound) {
-      if (sessions(t).map(_.duration).sum + talk.duration <= maxSessionTime) {
-        sessions(t) += talk
+    for (session <- sessions if !slotFound) {
+      if (session.map(_.duration).sum + talk.duration <= maxSessionTime) {
+        val talkWithStartTime = session match {
+          case talks if talks.isEmpty => talk.copy(startTime = sessionStartTime)
+          case talks => talk.copy(startTime = talks.last.startTime.plusMinutes(talks.last.duration))
+        }
+        session += talkWithStartTime
         slotFound = true
       }
     }
