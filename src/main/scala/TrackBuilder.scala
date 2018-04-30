@@ -14,7 +14,7 @@ object TrackBuilder {
     if (talkDetails.nonEmpty) {
       for (talk <- talkDetails) {
         if (!findAndInsertSlotIn(morningSessions, maxMinutesMorning, morningSessionStartTime, talk))
-          findAndInsertSlotIn(eveningSessions, maxMinutesEvening.end, eveningSessionStartTime, talk)
+          findAndInsertSlotIn(eveningSessions, maxMinutesEvening, eveningSessionStartTime, talk)
       }
       Some((morningSessions zip eveningSessions).map { track => Track(track._1.toList, track._2.toList) })
     }
@@ -38,6 +38,6 @@ object TrackBuilder {
   }
 
   private def calculateNoOfTracks(talkDetailsList: List[Talk]) = {
-    Math.ceil(talkDetailsList.map(_.duration).sum / (maxMinutesMorning + maxMinutesEvening.max).toDouble).toInt
+    Math.ceil(talkDetailsList.map(_.duration).sum / (maxMinutesMorning + maxMinutesEvening).toDouble).toInt
   }
 }

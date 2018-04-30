@@ -1,5 +1,7 @@
-import helpers.InputFileParser
+package helpers
+
 import org.scalatest.{FlatSpec, Matchers}
+import configs.TrackManagerConfig.maxMinutesEvening
 
 class InputFileParserSpec extends FlatSpec with Matchers {
 
@@ -48,5 +50,29 @@ class InputFileParserSpec extends FlatSpec with Matchers {
     }
 
     error.getMessage.contains("Invalid input data") shouldBe true
+  }
+
+  "InputParser" should "throw exception when talk title contains numeric value" in {
+    val error = intercept[Exception] {
+      InputFileParser.parse("/Users/mangeshphuge/ConferenceTrackManagerScalaRP/src/test/testData/InvalidTitleTalkDetails")
+    }
+
+    error.getMessage.contains("Talk title sould not have numbers or Invalid talk duration") shouldBe true
+  }
+
+  "InputParser" should "throw exception when talk duration is invalid" in {
+    val error = intercept[Exception] {
+      InputFileParser.parse("/Users/mangeshphuge/ConferenceTrackManagerScalaRP/src/test/testData/InvalidDurationTalkDetails")
+    }
+
+    error.getMessage.contains("Talk title sould not have numbers or Invalid talk duration") shouldBe true
+  }
+
+  "InputParser" should "throw exception when talk duration is greater than max session slot" in {
+    val error = intercept[Exception] {
+      InputFileParser.parse("/Users/mangeshphuge/ConferenceTrackManagerScalaRP/src/test/testData/DurationGreaterThanMaxLimit")
+    }
+
+    error.getMessage.contains(s"Duration should not be greater than $maxMinutesEvening Minutes") shouldBe true
   }
 }

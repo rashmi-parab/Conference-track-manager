@@ -1,6 +1,6 @@
 package helpers
 
-import configs.TrackManagerConfig
+import configs.TrackManagerConfig._
 import models.Talk
 
 import scala.io.Source
@@ -12,10 +12,9 @@ object InputFileParser {
 
     try {
       if (bufferedSource.nonEmpty) {
-        val allTalks = bufferedSource.getLines.toList.map { talkTitle =>
-          talkTitle.split(" ").last match {
-            case "lightning" => Talk(talkTitle, TrackManagerConfig.LightningTalkDuration)
-            case duration => Talk(talkTitle, duration.substring(0, 2).toInt)
+        val allTalks = bufferedSource.getLines.toList.map { talkDetails =>
+          withValidTalkDetails(talkDetails) { (_ , duration) =>
+            Talk(talkDetails, duration)
           }
         }
 
@@ -34,5 +33,23 @@ object InputFileParser {
     finally {
       bufferedSource.close
     }
+  }
+
+
+  private def withValidTalkDetails(talkDetails: String)(f: (String, Int) => Talk): Talk = {
+    val title = talkDetails.substring(0, talkDetails.lastIndexOf(" "))
+    val duration = talkDetails.split(" ").last
+
+    if (duration.matches(s"(\\d+min)|lightning") && !title.exists(Character.isDigit)) {
+      val durationAsInt = duration match {
+        case "lightning" => 5
+        case _ => {
+          val d = duration.substring(0, duration.length - 3).toInt
+          if(d <= maxMinutesEvening) d else throw new Exception(s"Duration should not be greater than $maxMinutesEvening Minutes")
+        }
+      }
+      f(talkDetails, durationAsInt)
+    }
+    else throw new Exception("Talk title sould not have numbers or Invalid talk duration")
   }
 }
