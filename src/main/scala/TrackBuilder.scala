@@ -1,21 +1,20 @@
 import java.time.LocalTime
 
-import configs.TrackManagerConfig
+import configs.TrackManagerConfig._
 import models.{Talk, Track}
-
 import scala.collection.mutable.ListBuffer
 
 object TrackBuilder {
 
-  def build(talkDetailsList: List[Talk]): Option[List[Track]] = {
-    val noOfTracks = calculateNoOfTracks(talkDetailsList)
+  def build(talkDetails: List[Talk]): Option[List[Track]] = {
+    val noOfTracks = calculateNoOfTracks(talkDetails)
     val morningSessions: List[ListBuffer[Talk]] = List.fill(noOfTracks)(ListBuffer.empty)
     val eveningSessions: List[ListBuffer[Talk]] = List.fill(noOfTracks)(ListBuffer.empty)
 
-    if (talkDetailsList.nonEmpty) {
-      for (talk <- talkDetailsList) {
-        if (!findAndInsertSlotIn(morningSessions, TrackManagerConfig.maxMinutesMorning, TrackManagerConfig.morningSessionStartTime, talk))
-          findAndInsertSlotIn(eveningSessions, TrackManagerConfig.maxMinutesEvening.end, TrackManagerConfig.eveningSessionStartTime, talk)
+    if (talkDetails.nonEmpty) {
+      for (talk <- talkDetails) {
+        if (!findAndInsertSlotIn(morningSessions, maxMinutesMorning, morningSessionStartTime, talk))
+          findAndInsertSlotIn(eveningSessions, maxMinutesEvening.end, eveningSessionStartTime, talk)
       }
       Some((morningSessions zip eveningSessions).map { track => Track(track._1.toList, track._2.toList) })
     }
@@ -39,6 +38,6 @@ object TrackBuilder {
   }
 
   private def calculateNoOfTracks(talkDetailsList: List[Talk]) = {
-    Math.ceil(talkDetailsList.map(_.duration).sum / (TrackManagerConfig.maxMinutesMorning + TrackManagerConfig.maxMinutesEvening.max).toDouble).toInt
+    Math.ceil(talkDetailsList.map(_.duration).sum / (maxMinutesMorning + maxMinutesEvening.max).toDouble).toInt
   }
 }

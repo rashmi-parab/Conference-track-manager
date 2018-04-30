@@ -1,13 +1,18 @@
 import helpers.InputFileParser
 
+import scala.io.StdIn.readLine
+
 object ConferenceTrackManager {
 
   def main(args: Array[String]): Unit = {
 
-    val fileName = scala.io.StdIn.readLine("Enter the input file path : ")
+    val fileName = readLine("Enter the input file path : ")
 
-    val talkDetailsList = InputFileParser.parse(fileName)
+    val talkDetails = InputFileParser.parse(fileName)
 
-    TrackBuilder.build(talkDetailsList)
+    TrackBuilder.build(talkDetails) match {
+      case Some(tracks) => TrackPrinter.print(tracks)
+      case None => throw new Exception("Invalid Input")
+    }
   }
 }
