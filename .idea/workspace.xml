@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2eb8a295-e5f8-452b-aaa4-c395f2b8ab74" name="Default" comment="Refactor TrackBuilder.build to return Option of talks.">
+    <list default="true" id="2eb8a295-e5f8-452b-aaa4-c395f2b8ab74" name="Default" comment="1.Add more validation for talk title and duration">
       <change beforePath="$PROJECT_DIR$/.idea/modules/conferencetrackmanagerscalarp.iml" afterPath="$PROJECT_DIR$/.idea/modules/conferencetrackmanagerscalarp.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/build.sbt" afterPath="$PROJECT_DIR$/build.sbt" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/ConferenceTrackManager.scala" afterPath="$PROJECT_DIR$/src/main/scala/ConferenceTrackManager.scala" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/TrackBuilder.scala" afterPath="$PROJECT_DIR$/src/main/scala/TrackBuilder.scala" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/configs/TrackManagerConfig.scala" afterPath="$PROJECT_DIR$/src/main/scala/configs/TrackManagerConfig.scala" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/helpers/InputFileParser.scala" afterPath="$PROJECT_DIR$/src/main/scala/helpers/InputFileParser.scala" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/models/Talk.scala" afterPath="$PROJECT_DIR$/src/main/scala/models/Talk.scala" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/TrackBuilderSpec.scala" afterPath="$PROJECT_DIR$/src/test/scala/TrackBuilderSpec.scala" />
+      <change beforePath="$PROJECT_DIR$/README" afterPath="$PROJECT_DIR$/README" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -46,21 +40,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ConferenceTrackManager.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/ConferenceTrackManager.scala">
+      <file leaf-file-name="TrackManager.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/TrackManager.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="39" lean-forward="false" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+            <state relative-caret-position="90">
+              <caret line="6" column="41" lean-forward="true" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ValidConferenceTalkDetails" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/testData/ValidConferenceTalkDetails">
+      <file leaf-file-name="TrackPrinter.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/TrackPrinter.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+            <state relative-caret-position="390">
+              <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#769#1255#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-713">
+              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -69,54 +76,13 @@
       <file leaf-file-name="TrackBuilder.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/TrackBuilder.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-                <element signature="e#1588#1806#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InputFileParserSpec.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/InputFileParserSpec.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="28" column="24" lean-forward="true" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Talk.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/models/Talk.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TrackBuilderSpec.scala" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/TrackBuilderSpec.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="63" column="16" lean-forward="false" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TrackManagerConfig.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/configs/TrackManagerConfig.scala">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="8" column="46" lean-forward="false" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
-              <folding />
+              <caret line="8" column="60" lean-forward="false" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#161#864#0" expanded="false" />
+                <element signature="e#1493#1669#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -138,11 +104,17 @@
       <find>(</find>
       <find>HOURS_PER_DAY</find>
       <find>empty</find>
+      <find>talkTitle</find>
+      <find>abc</find>
+      <find>$PROJECT_DIR$</find>
     </findStrings>
     <replaceStrings>
       <replace>Talk</replace>
       <replace>duration</replace>
       <replace>Talk(</replace>
+      <replace>talkDetails</replace>
+      <replace>TimeFormatter</replace>
+      <replace>$currentProjectDirectory</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -156,7 +128,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/README" />
         <option value="$PROJECT_DIR$/resources/ConferenceTalkDetails" />
         <option value="$PROJECT_DIR$/resources/MissingDurationTalkDetails" />
         <option value="$PROJECT_DIR$/src/test/scala/InputParserSpec.scala" />
@@ -168,16 +139,32 @@
         <option value="$PROJECT_DIR$/src/main/scala/model/Talk.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/ConferenceManagerSpec.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/ConferenceManager.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/models/Track.scala" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/build.sbt" />
         <option value="$PROJECT_DIR$/src/main/scala/models/Talk.scala" />
         <option value="$PROJECT_DIR$/src/test/testData/scriptFile.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/helpers/InputFileParser.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/configs/TrackManagerConfig.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/TrackBuilder.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/ConferenceTrackManager.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/TrackBuilderSpec.scala" />
+        <option value="$PROJECT_DIR$/build.sbt" />
+        <option value="$PROJECT_DIR$/src/main/scala/helpers/TimeConverter.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/helpers/TimeFormatter.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/helpers/TimeFormatter.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/helpers/Timeabc.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/helpers/abc.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/helpers/abc.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/ConferenceTrackManager.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/models/Track.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/TrackPrinterSpec.scala" />
+        <option value="$PROJECT_DIR$/src/test/testData/InvalidDurationTalkDetails" />
+        <option value="$PROJECT_DIR$/src/test/testData/InvalidTitleTalkDetails" />
+        <option value="$PROJECT_DIR$/src/test/scala/helpers/TimeFormatterSpec.scala" />
+        <option value="$PROJECT_DIR$/src/test/testData/FourDigitDurationTalkDetails" />
+        <option value="$PROJECT_DIR$/src/test/testData/DurationGreaterThanMaxLimit" />
+        <option value="$PROJECT_DIR$/src/test/scala/helpers/InputFileParserSpec.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/configs/TrackManagerConfig.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/TrackManager.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/helpers/InputFileParser.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/TrackBuilder.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/TrackPrinter.scala" />
+        <option value="$PROJECT_DIR$/README" />
       </list>
     </option>
   </component>
@@ -186,6 +173,31 @@
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="877" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>CollectionsScala</id>
+          </State>
+          <State>
+            <id>OtherCollectionsScala</id>
+          </State>
+          <State>
+            <id>Scala</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>UnitInMap</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -229,46 +241,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ConferenceTrackManagerScalaRP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ConferenceTrackManagerScalaRP" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="configs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ConferenceTrackManagerScalaRP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ConferenceTrackManagerScalaRP" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ConferenceTrackManagerScalaRP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ConferenceTrackManagerScalaRP" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ConferenceTrackManagerScalaRP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ConferenceTrackManagerScalaRP" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ConferenceTrackManagerScalaRP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ConferenceTrackManagerScalaRP" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="testData" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ConferenceTrackManagerScalaRP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -285,6 +257,9 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="helpers" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/testData" />
     </key>
@@ -301,7 +276,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="ScalaTest.TrackBuilderSpec.TrackBuilder should return empty list given empty list of talkDetails">
+  <component name="RunManager" selected="ScalaTest.InputFileParserSpec.InputParser should throw exception when talk duration is invalid">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -350,10 +325,10 @@
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
     </configuration>
-    <configuration name="ConferenceManagerSpec.ConferenceManager should compute tracks from given talk details" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+    <configuration name="InputFileParserSpec.InputParser should parse the input file into a list of talkDescription and duration" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="conferencetrackmanagerscalarp" />
-      <setting name="path" value="ConferenceManagerSpec" />
+      <setting name="path" value="helpers.InputFileParserSpec" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
       <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -363,13 +338,13 @@
       <setting name="useUiWithSbt" value="false" />
       <envs />
       <setting name="testKind" value="Test name" />
-      <setting name="path" value="ConferenceManagerSpec" />
-      <setting name="testName" value="ConferenceManager should compute tracks from given talk details" />
+      <setting name="path" value="helpers.InputFileParserSpec" />
+      <setting name="testName" value="InputParser should parse the input file into a list of talkDescription and duration" />
     </configuration>
-    <configuration name="InputParserSpec.InputParser should throw exception when talk duration not specified" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+    <configuration name="InputFileParserSpec.InputParser should throw exception when talk duration is greater than max session slot" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="conferencetrackmanagerscalarp" />
-      <setting name="path" value="InputParserSpec" />
+      <setting name="path" value="helpers.InputFileParserSpec" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
       <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -379,13 +354,13 @@
       <setting name="useUiWithSbt" value="false" />
       <envs />
       <setting name="testKind" value="Test name" />
-      <setting name="path" value="InputParserSpec" />
-      <setting name="testName" value="InputParser should throw exception when talk duration not specified" />
+      <setting name="path" value="helpers.InputFileParserSpec" />
+      <setting name="testName" value="InputParser should throw exception when talk duration is greater than max session slot" />
     </configuration>
-    <configuration name="TrackBuilderSpec.ConferenceManager should compute tracks from given talk details" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+    <configuration name="InputFileParserSpec.InputParser should throw exception when talk duration is invalid" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="conferencetrackmanagerscalarp" />
-      <setting name="path" value="TrackBuilderSpec" />
+      <setting name="path" value="helpers.InputFileParserSpec" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
       <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -395,13 +370,13 @@
       <setting name="useUiWithSbt" value="false" />
       <envs />
       <setting name="testKind" value="Test name" />
-      <setting name="path" value="TrackBuilderSpec" />
-      <setting name="testName" value="ConferenceManager should compute tracks from given talk details" />
+      <setting name="path" value="helpers.InputFileParserSpec" />
+      <setting name="testName" value="InputParser should throw exception when talk duration is invalid" />
     </configuration>
-    <configuration name="TrackBuilderSpec.TrackBuilder should compute tracks from given talk details" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+    <configuration name="InputFileParserSpec.InputParser should throw exception when talk title contains numeric value" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="conferencetrackmanagerscalarp" />
-      <setting name="path" value="TrackBuilderSpec" />
+      <setting name="path" value="helpers.InputFileParserSpec" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
       <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -411,13 +386,13 @@
       <setting name="useUiWithSbt" value="false" />
       <envs />
       <setting name="testKind" value="Test name" />
-      <setting name="path" value="TrackBuilderSpec" />
-      <setting name="testName" value="TrackBuilder should compute tracks from given talk details" />
+      <setting name="path" value="helpers.InputFileParserSpec" />
+      <setting name="testName" value="InputParser should throw exception when talk title contains numeric value" />
     </configuration>
-    <configuration name="TrackBuilderSpec.TrackBuilder should return empty list given empty list of talkDetails" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+    <configuration name="TimeFormatterSpec.abc should ppqr" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="conferencetrackmanagerscalarp" />
-      <setting name="path" value="TrackBuilderSpec" />
+      <setting name="path" value="helpers.TimeFormatterSpec" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
       <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -427,8 +402,8 @@
       <setting name="useUiWithSbt" value="false" />
       <envs />
       <setting name="testKind" value="Test name" />
-      <setting name="path" value="TrackBuilderSpec" />
-      <setting name="testName" value="TrackBuilder should return empty list given empty list of talkDetails" />
+      <setting name="path" value="helpers.TimeFormatterSpec" />
+      <setting name="testName" value="abc should ppqr" />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -464,24 +439,24 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="ScalaTest.InputParserSpec.InputParser should throw exception when talk duration not specified" />
-      <item index="1" class="java.lang.String" itemvalue="ScalaTest.ConferenceManagerSpec.ConferenceManager should compute tracks from given talk details" />
-      <item index="2" class="java.lang.String" itemvalue="ScalaTest.TrackBuilderSpec.ConferenceManager should compute tracks from given talk details" />
-      <item index="3" class="java.lang.String" itemvalue="ScalaTest.TrackBuilderSpec.TrackBuilder should return empty list given empty list of talkDetails" />
-      <item index="4" class="java.lang.String" itemvalue="ScalaTest.TrackBuilderSpec.TrackBuilder should compute tracks from given talk details" />
+      <item index="0" class="java.lang.String" itemvalue="ScalaTest.InputFileParserSpec.InputParser should parse the input file into a list of talkDescription and duration" />
+      <item index="1" class="java.lang.String" itemvalue="ScalaTest.InputFileParserSpec.InputParser should throw exception when talk title contains numeric value" />
+      <item index="2" class="java.lang.String" itemvalue="ScalaTest.TimeFormatterSpec.abc should ppqr" />
+      <item index="3" class="java.lang.String" itemvalue="ScalaTest.InputFileParserSpec.InputParser should throw exception when talk duration is greater than max session slot" />
+      <item index="4" class="java.lang.String" itemvalue="ScalaTest.InputFileParserSpec.InputParser should throw exception when talk duration is invalid" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="ScalaTest.TrackBuilderSpec.TrackBuilder should return empty list given empty list of talkDetails" />
-        <item index="1" class="java.lang.String" itemvalue="ScalaTest.TrackBuilderSpec.TrackBuilder should compute tracks from given talk details" />
-        <item index="2" class="java.lang.String" itemvalue="ScalaTest.TrackBuilderSpec.ConferenceManager should compute tracks from given talk details" />
-        <item index="3" class="java.lang.String" itemvalue="ScalaTest.ConferenceManagerSpec.ConferenceManager should compute tracks from given talk details" />
-        <item index="4" class="java.lang.String" itemvalue="ScalaTest.InputParserSpec.InputParser should throw exception when talk duration not specified" />
+        <item index="0" class="java.lang.String" itemvalue="ScalaTest.InputFileParserSpec.InputParser should throw exception when talk duration is invalid" />
+        <item index="1" class="java.lang.String" itemvalue="ScalaTest.InputFileParserSpec.InputParser should throw exception when talk duration is greater than max session slot" />
+        <item index="2" class="java.lang.String" itemvalue="ScalaTest.InputFileParserSpec.InputParser should throw exception when talk title contains numeric value" />
+        <item index="3" class="java.lang.String" itemvalue="ScalaTest.TimeFormatterSpec.abc should ppqr" />
+        <item index="4" class="java.lang.String" itemvalue="ScalaTest.InputFileParserSpec.InputParser should parse the input file into a list of talkDescription and duration" />
       </list>
     </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
-    <option name="lastUpdateTimestamp" value="1524830905265" />
+    <option name="lastUpdateTimestamp" value="1525018061226" />
     <option name="availableProjects">
       <map>
         <entry>
@@ -548,39 +523,81 @@
       <option name="project" value="LOCAL" />
       <updated>1524829901927</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="1.Add startTime to Talk class&#10;2.Refactor build() to compute startTime of a talk and its corresponding tests">
+      <created>1525007050318</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1525007050318</updated>
+    </task>
+    <task id="LOCAL-00004" summary="1. Implement TrackPrinter and its test&#10;2. Add TimeFormatter to format time to 12 hours format and its tests">
+      <created>1525074472296</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1525074472298</updated>
+    </task>
+    <task id="LOCAL-00005" summary="1.Add more validation for talk title and duration and add its corresponding tests">
+      <created>1525076537584</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1525076537584</updated>
+    </task>
+    <task id="LOCAL-00006" summary="1. Refactor InputFileParserSpec to calculate absolute path of test data files instead of hardcoding">
+      <created>1525079384088</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1525079384088</updated>
+    </task>
+    <task id="LOCAL-00007" summary="1. Rename ConferenceTrackManager to TrackManager&#10;2. Refactor TrackManager to accept filepath as a command line argument">
+      <created>1525081309771</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1525081309771</updated>
+    </task>
+    <task id="LOCAL-00008" summary="1. Rename method networkingStartTime to calculateNetworkSessionStartTime&#10;2. Add logic to calculate network session time if eveningSession is empty">
+      <created>1525081415219</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1525081415219</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TrackBuilderSpec_TrackBuilder_should_compute_tracks_from_given_talk_details - 2018.04.29 at 14h 34m 40s.xml">
-      <configuration name="TrackBuilderSpec.TrackBuilder should compute tracks from given talk details" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="InputFileParserSpec_InputParser_should_throw_exception_when_talk_duration_is_greater_than_max_session_slot - 2018.04.30 at 10h 35m 35s.xml">
+      <configuration name="InputFileParserSpec.InputParser should throw exception when talk duration is greater than max session slot" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TrackBuilderSpec_TrackBuilder_should_compute_tracks_from_given_talk_details - 2018.04.29 at 14h 37m 03s.xml">
-      <configuration name="TrackBuilderSpec.TrackBuilder should compute tracks from given talk details" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="InputFileParserSpec_InputParser_should_throw_exception_when_talk_duration_is_greater_than_max_session_slot - 2018.04.30 at 10h 36m 26s.xml">
+      <configuration name="InputFileParserSpec.InputParser should throw exception when talk duration is greater than max session slot" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TrackBuilderSpec_TrackBuilder_should_compute_tracks_from_given_talk_details - 2018.04.29 at 14h 49m 31s.xml">
-      <configuration name="TrackBuilderSpec.TrackBuilder should compute tracks from given talk details" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="InputFileParserSpec_InputParser_should_throw_exception_when_talk_duration_is_greater_than_max_session_slot - 2018.04.30 at 10h 36m 47s.xml">
+      <configuration name="InputFileParserSpec.InputParser should throw exception when talk duration is greater than max session slot" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TrackBuilderSpec_TrackBuilder_should_compute_tracks_from_given_talk_details - 2018.04.29 at 14h 49m 38s.xml">
-      <configuration name="TrackBuilderSpec.TrackBuilder should compute tracks from given talk details" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="InputFileParserSpec_InputParser_should_throw_exception_when_talk_duration_is_greater_than_max_session_slot - 2018.04.30 at 10h 37m 16s.xml">
+      <configuration name="InputFileParserSpec.InputParser should throw exception when talk duration is greater than max session slot" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TrackBuilderSpec_TrackBuilder_should_compute_tracks_from_given_talk_details - 2018.04.29 at 14h 51m 04s.xml">
-      <configuration name="TrackBuilderSpec.TrackBuilder should compute tracks from given talk details" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="InputFileParserSpec_InputParser_should_throw_exception_when_talk_duration_is_invalid - 2018.04.30 at 10h 48m 43s.xml">
+      <configuration name="InputFileParserSpec.InputParser should throw exception when talk duration is invalid" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TrackBuilderSpec_TrackBuilder_should_compute_tracks_from_given_talk_details - 2018.04.29 at 14h 51m 15s.xml">
-      <configuration name="TrackBuilderSpec.TrackBuilder should compute tracks from given talk details" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="InputFileParserSpec_InputParser_should_throw_exception_when_talk_duration_is_invalid - 2018.04.30 at 10h 49m 27s.xml">
+      <configuration name="InputFileParserSpec.InputParser should throw exception when talk duration is invalid" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TrackBuilderSpec_TrackBuilder_should_compute_tracks_from_given_talk_details - 2018.04.29 at 14h 55m 33s.xml">
-      <configuration name="TrackBuilderSpec.TrackBuilder should compute tracks from given talk details" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="InputFileParserSpec_InputParser_should_throw_exception_when_talk_duration_is_invalid - 2018.04.30 at 10h 50m 18s.xml">
+      <configuration name="InputFileParserSpec.InputParser should throw exception when talk duration is invalid" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TrackBuilderSpec_TrackBuilder_should_compute_tracks_from_given_talk_details - 2018.04.29 at 14h 57m 11s.xml">
-      <configuration name="TrackBuilderSpec.TrackBuilder should compute tracks from given talk details" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="InputFileParserSpec_InputParser_should_throw_exception_when_talk_duration_is_invalid - 2018.04.30 at 10h 58m 01s.xml">
+      <configuration name="InputFileParserSpec.InputParser should throw exception when talk duration is invalid" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TrackBuilderSpec_TrackBuilder_should_return_empty_list_given_empty_list_of_talkDetails - 2018.04.29 at 14h 58m 22s.xml">
-      <configuration name="TrackBuilderSpec.TrackBuilder should return empty list given empty list of talkDetails" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="InputFileParserSpec_InputParser_should_throw_exception_when_talk_duration_is_invalid - 2018.04.30 at 10h 58m 44s.xml">
+      <configuration name="InputFileParserSpec.InputParser should throw exception when talk duration is invalid" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TrackBuilderSpec_TrackBuilder_should_return_empty_list_given_empty_list_of_talkDetails - 2018.04.29 at 14h 58m 33s.xml">
-      <configuration name="TrackBuilderSpec.TrackBuilder should return empty list given empty list of talkDetails" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="InputFileParserSpec_InputParser_should_throw_exception_when_talk_duration_is_invalid - 2018.04.30 at 11h 00m 28s.xml">
+      <configuration name="InputFileParserSpec.InputParser should throw exception when talk duration is invalid" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -592,6 +609,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -602,10 +620,10 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3529412" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41943735" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40920717" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29041487" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43861893" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27038628" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="sbt-shell-toolwindow" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -614,7 +632,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -625,11 +642,17 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1. Refactor InputParser to return List[Talk] and its tests&#10;2. Implement TrackBuilder and its happy path unit test" />
     <MESSAGE value="Refactor TrackBuilder.build to return Option of talks." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor TrackBuilder.build to return Option of talks." />
+    <MESSAGE value="1.Add startTime to Talk class&#10;2.Refactor build() to compute startTime of a talk and its corresponding tests" />
+    <MESSAGE value="1. Implement TrackPrinter and its test&#10;2. Add TimeFormatter to format time to 12 hours format and its tests" />
+    <MESSAGE value="1.Add more validation for talk title and duration and add its corresponding tests" />
+    <MESSAGE value="1. Refactor InputFileParserSpec to calculate absolute path of test data files instead of hardcoding" />
+    <MESSAGE value="1. Rename ConferenceTrackManager to TrackManager&#10;2. Refactor TrackManager to accept filepath as a command line argument" />
+    <MESSAGE value="1. Rename method networkingStartTime to calculateNetworkSessionStartTime&#10;2. Add logic to calculate network session time if eveningSession is empty" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. Rename method networkingStartTime to calculateNetworkSessionStartTime&#10;2. Add logic to calculate network session time if eveningSession is empty" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="45" />
+      <option name="time" value="59" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="ScalaTestRunConfiguration">
@@ -650,6 +673,16 @@
       </expression>
     </expressions>
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>(title forall Character.isDigit)</expression-string>
+        <language-id>Scala</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>title.matches(&quot;\\d+&quot;)</expression-string>
+        <language-id>Scala</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>maxSessionTime</expression-string>
         <language-id>Scala</language-id>
@@ -685,161 +718,9 @@
         <language-id>Scala</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>tracks(t)._1</expression-string>
-        <language-id>Scala</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>tr</expression-string>
-        <language-id>Scala</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.7-sources.jar!/scala/collection/immutable/Range.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1815">
-          <caret line="121" column="15" lean-forward="false" selection-start-line="121" selection-start-column="15" selection-end-line="121" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/configs/TrackManagerConfig.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/helpers/InputFileParser.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/TrackBuilder.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LICENSE">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="10" lean-forward="true" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/example/Hello.scala" />
-    <entry file="file://$PROJECT_DIR$/src/test/scala/HelloSpec.scala" />
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.7-sources.jar!/scala/collection/Iterator.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="290" column="6" lean-forward="false" selection-start-line="290" selection-start-column="6" selection-end-line="290" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scalatest/scalatest_2.11/srcs/scalatest_2.11-2.2.4-sources.jar!/org/scalatest/OutcomeOf.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="83" column="4" lean-forward="false" selection-start-line="83" selection-start-column="4" selection-end-line="83" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.7-sources.jar!/scala/collection/TraversableOnce.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="291" column="6" lean-forward="false" selection-start-line="291" selection-start-column="6" selection-end-line="291" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="2259" column="24" lean-forward="false" selection-start-line="2259" selection-start-column="24" selection-end-line="2259" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.7-sources.jar!/scala/io/Source.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scalatest/scalatest_2.11/srcs/scalatest_2.11-2.2.4-sources.jar!/org/scalatest/words/MatcherWords.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="119" column="6" lean-forward="false" selection-start-line="119" selection-start-column="6" selection-end-line="119" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/testData/EmptyConferenceTalkDetails">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/testData/MissingDurationTalkDetails">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="24" lean-forward="true" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.7-sources.jar!/scala/collection/SeqLike.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9870">
-          <caret line="668" column="6" lean-forward="false" selection-start-line="668" selection-start-column="6" selection-end-line="668" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.7-sources.jar!/scala/collection/immutable/List.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1110">
-          <caret line="83" column="30" lean-forward="false" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/lang/Math.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="421" column="25" lean-forward="false" selection-start-line="421" selection-start-column="25" selection-end-line="421" selection-end-column="25" />
-          <folding>
-            <element signature="e#16338#16339#0" expanded="false" />
-            <element signature="e#16420#16421#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.7-sources.jar!/scala/collection/mutable/BufferLike.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1532">
-          <caret line="166" column="6" lean-forward="false" selection-start-line="166" selection-start-column="6" selection-end-line="166" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.7-sources.jar!/scala/io/BufferedSource.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="427">
@@ -880,14 +761,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.sbt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.ivy2/cache/joda-time/joda-time/srcs/joda-time-2.9.9-sources.jar!/org/joda/time/TimeOfDay.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -915,14 +788,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.7-sources.jar!/scala/Predef.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="263" column="16" lean-forward="false" selection-start-line="263" selection-start-column="16" selection-end-line="263" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.ivy2/cache/joda-time/joda-time/srcs/joda-time-2.9.9-sources.jar!/org/joda/time/LocalDate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="675">
@@ -931,29 +796,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/text/SimpleDateFormat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11772">
-          <caret line="289" column="32" lean-forward="true" selection-start-line="289" selection-start-column="32" selection-end-line="289" selection-end-column="32" />
-          <folding>
-            <element signature="e#23443#23444#0" expanded="false" />
-            <element signature="e#23515#23516#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/util/Date.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2317">
           <caret line="130" column="13" lean-forward="false" selection-start-line="130" selection-start-column="13" selection-end-line="130" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/text/DateFormat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="342" column="33" lean-forward="false" selection-start-line="342" selection-start-column="31" selection-end-line="342" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -966,37 +812,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/time/LocalTime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="294" column="28" lean-forward="false" selection-start-line="294" selection-start-column="28" selection-end-line="294" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.7-sources.jar!/scala/package.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="847">
-          <caret line="77" column="6" lean-forward="false" selection-start-line="77" selection-start-column="6" selection-end-line="77" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.7-sources.jar!/scala/collection/immutable/Range.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
           <caret line="445" column="6" lean-forward="false" selection-start-line="445" selection-start-column="6" selection-end-line="445" selection-end-column="6" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/helpers/InputFileParser.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-          <folding>
-            <element signature="e#17#50#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1008,67 +828,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="2885" column="18" lean-forward="false" selection-start-line="2885" selection-start-column="18" selection-end-line="2885" selection-end-column="18" />
-          <folding>
-            <element signature="e#113343#113344#0" expanded="true" />
-            <element signature="e#113370#113371#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="235" column="21" lean-forward="false" selection-start-line="235" selection-start-column="15" selection-end-line="235" selection-end-column="23" />
           <folding>
-            <element signature="e#10065#10066#0" expanded="true" />
-            <element signature="e#10148#10149#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/models/Track.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/models/Talk.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/configs/TrackManagerConfig.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="46" lean-forward="false" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/InputFileParserSpec.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="28" column="24" lean-forward="true" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/TrackBuilder.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#1588#1806#0" expanded="false" />
+            <element signature="e#10065#10066#0" expanded="false" />
+            <element signature="e#10148#10149#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1081,29 +847,311 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/testData/ValidConferenceTalkDetails">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/text/DateFormat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        <state relative-caret-position="252">
+          <caret line="342" column="24" lean-forward="false" selection-start-line="342" selection-start-column="24" selection-end-line="342" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/ConferenceTrackManager.scala">
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.7-sources.jar!/scala/io/StdIn.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="643">
+          <caret line="228" column="26" lean-forward="false" selection-start-line="228" selection-start-column="21" selection-end-line="228" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/text/SimpleDateFormat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="577" column="11" lean-forward="false" selection-start-line="577" selection-start-column="11" selection-end-line="577" selection-end-column="11" />
+          <folding>
+            <element signature="e#23443#23444#0" expanded="false" />
+            <element signature="e#23515#23516#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/time/LocalTime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="294" column="28" lean-forward="false" selection-start-line="294" selection-start-column="28" selection-end-line="294" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.7-sources.jar!/scala/collection/SeqLike.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2267">
+          <caret line="446" column="6" lean-forward="false" selection-start-line="446" selection-start-column="6" selection-end-line="446" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/models/Track.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="71" lean-forward="false" selection-start-line="2" selection-start-column="71" selection-end-line="2" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.7-sources.jar!/scala/Predef.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="263" column="16" lean-forward="false" selection-start-line="263" selection-start-column="16" selection-end-line="263" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="2119" column="19" lean-forward="false" selection-start-line="2119" selection-start-column="19" selection-end-line="2119" selection-end-column="19" />
+          <folding>
+            <element signature="e#56437#56438#0" expanded="false" />
+            <element signature="e#56514#56515#0" expanded="false" />
+            <element signature="e#82616#82617#0" expanded="false" />
+            <element signature="e#82667#82668#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/TrackPrinterSpec.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/models/Talk.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/testData/MissingDurationTalkDetails">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/testData/EmptyConferenceTalkDetails">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/testData/InvalidDurationTalkDetails">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="24" lean-forward="true" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/helpers/TimeFormatter.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="39" lean-forward="false" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+          <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/testData/InvalidTitleTalkDetails">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="24" lean-forward="true" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/lang/Character.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="5944" column="26" lean-forward="false" selection-start-line="5944" selection-start-column="26" selection-end-line="5944" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/helpers/TimeFormatterSpec.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="28" column="85" lean-forward="false" selection-start-line="28" selection-start-column="85" selection-end-line="28" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.7-sources.jar!/scala/collection/IndexedSeqOptimized.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1262">
+          <caret line="45" column="6" lean-forward="false" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.7-sources.jar!/scala/package.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="77" column="6" lean-forward="false" selection-start-line="77" selection-start-column="6" selection-end-line="77" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/testData/FourDigitDurationTalkDetails">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="48" lean-forward="false" selection-start-line="0" selection-start-column="48" selection-end-line="0" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/testData/DurationGreaterThanMaxLimit">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="28" lean-forward="true" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/testData/ValidConferenceTalkDetails">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/TrackBuilderSpec.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="63" column="16" lean-forward="false" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
+        <state relative-caret-position="615">
+          <caret line="67" column="3" lean-forward="false" selection-start-line="67" selection-start-column="3" selection-end-line="67" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/lang/ClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="1220" column="22" lean-forward="false" selection-start-line="1220" selection-start-column="22" selection-end-line="1220" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="2259" column="24" lean-forward="false" selection-start-line="2259" selection-start-column="24" selection-end-line="2259" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.7-sources.jar!/scala/io/Source.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="52" column="6" lean-forward="false" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/helpers/InputFileParserSpec.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="e#17#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/helpers/InputFileParser.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="3" lean-forward="false" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
+          <folding>
+            <element signature="e#17#52#0" expanded="true" />
+            <element signature="e#881#1618#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/configs/TrackManagerConfig.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-reports/helpers.InputFileParserSpec.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-reports/helpers.TimeFormatterSpec.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/TrackBuilder.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="60" lean-forward="false" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#161#864#0" expanded="false" />
+            <element signature="e#1493#1669#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/TrackManager.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="41" lean-forward="true" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/TrackPrinter.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#769#1255#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-713">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
